@@ -1,14 +1,43 @@
-# MILLSBERRY REWRITE
+<div align="center">
+<img src="readme-assets/millsberry.png" alt="logo">
+<b>millsberry.com, rewriten!</b>
+</div>
+</br>
 
-Hi! I'm currently working on re-writing Millsberry.com using NodeJS & PUG.  
+---
 
-I am looking for collaborators on this project that can assist with UI design, various NodeJS functions, and anything in between.  
+### getting started
 
-This is a huge task as the site used flash player, which is not depreciated. I have a few ideas on how to get around it, but in the meantime re-writing the main site is my goal.  
+**1.** clone this repo
+```bash
+git clone https://github.com/naestech/millsberry.git
+```
 
-Please feel free to contact me here, or on Discord: TylerLasagna#2512  
+</br>
 
-Once a little more is done, I will deploy to Heroku for a more 'public' view of it.  
+**2.** install dependencies
+```
+npm install
+```
+```
+yarn install
+```
 
-Thanks for viewing!
+</br>
 
+**3.** start the server
+```
+npm start
+```
+```
+yarn run start
+```
+
+</br>
+
+**4.** head to localhost:3000
+<div align="center">
+<img src="readme-assets/millsberry-index.png" alt="landing page">
+</div>
+
+---
