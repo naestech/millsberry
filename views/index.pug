@@ -16,22 +16,22 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
   tr
     td(rowspan='2')
       a(href='/')
-        img(src='/public/graphics/logo_over_v2.gif' onmouseout="src='/public/graphics/logo_over_v2.gif';" onmouseover="src='/public/graphics/logo_over_v2.gif';" border='0' alt='Back to MAIN' style='text-align: center;')
+        img(src="/graphics/logo_over_v2.gif" onmouseout="src='/graphics/logo_over_v2.gif';" onmouseover="src='/graphics/logo_over_v2.gif';" border='0' alt='Back to MAIN' style='text-align: center;')
     td(width='650' height='55' valign='TOP' style='background-color: #cbf2fe;')
       table(border='0' cellpadding='0' cellspacing='0')
         tr
           td
             a(href='/home')
-              img(src='/public/graphics/visit_home_v2.gif' border='0' alt='Visit your Home!' onmouseout="src='/public/graphics/visit_home_v2.gif';" onmouseover="src='/public/graphics/visit_home_over_v2.gif';")
+              img(src='/graphics/visit_home_v2.gif' border='0' alt='Visit your Home!' onmouseout="src='/graphics/visit_home_v2.gif';" onmouseover="src='/graphics/visit_home_over_v2.gif';")
           td
             a(href='/main_map/downtown')
-              img(src='/public/graphics/visit_shopping_v2.gif' border='0' alt='Visit the Town Center!' onmouseout="src='/public/graphics/visit_shopping_v2.gif';" onmouseover="src='/public/graphics/visit_shopping_over_v2.gif';")
+              img(src='/graphics/visit_shopping_v2.gif' border='0' alt='Visit the Town Center!' onmouseout="src='/graphics/visit_shopping_v2.gif';" onmouseover="src='/graphics/visit_shopping_over_v2.gif';")
           td
             a(href='/highscores')
-              img(src='/public/graphics/visit_hi_scores_v2.gif' border='0' alt='Visit the Hi Scores!' onmouseout="src='/public/graphics/visit_hi_scores_v2.gif';" onmouseover="src='/public/graphics/visit_hi_scores_over_v2.gif';")
+              img(src='/graphics/visit_hi_scores_v2.gif' border='0' alt='Visit the Hi Scores!' onmouseout="src='/graphics/visit_hi_scores_v2.gif';" onmouseover="src='/graphics/visit_hi_scores_over_v2.gif';")
           td
             a(href='/faq')
-              img(src='/public/graphics/visit_faq_v2.gif' border='0' alt='Visit the Help Pages!' onmouseout="src='/public/graphics/visit_faq_v2.gif';" onmouseover="src='/public/graphics/visit_faq_over_v2.gif';")
+              img(src='/graphics/visit_faq_v2.gif' border='0' alt='Visit the Help Pages!' onmouseout="src='/graphics/visit_faq_v2.gif';" onmouseover="src='/graphics/visit_faq_over_v2.gif';")
         form(name='login' action='/' method='post')
           tr
             td(colspan='4' valign='bottom' style='color:black')
@@ -40,7 +40,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                 input#login_username(type='text' name='login_username' size='10')
                 |                            Password
                 input#login_password(type='password' name='login_pass' size='10')
-                img(type='image' src='/public/graphics/visit_log_in.gif' height='20' name='login' value='go' border='0' align='top' onmouseout="src='/public/graphics/visit_log_in.gif';" onmouseover="src='/public/graphics/visit_log_in.gif';" onclick="initLogin(document.getElementById('login_username').value, document.getElementById('login_password').value)")
+                img(type='image' src='/graphics/visit_log_in.gif' height='20' name='login' value='go' border='0' align='top' onmouseout="src='/graphics/visit_log_in.gif';" onmouseover="src='/graphics/visit_log_in.gif';" onclick="initLogin(document.getElementById('login_username').value, document.getElementById('login_password').value)")
                 a(href='/townhall/support')
                   font.smallfont(color='black') [ forgot your password? ]
     td(width='100%' bgcolor='#000000' colspan='2')
@@ -50,11 +50,11 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
         table(width='100%' border='0' cellpadding='0' cellspacing='0')
           tr
             td(style='background-color: #1887b6')
-              img(src='/public/graphics/header_stripe.gif')
-              img(src='/public/graphics/slice_11.gif')
+              img(src='/graphics/header_stripe.gif')
+              img(src='/graphics/slice_11.gif')
               | Address Book 
               input(type='text' name='search')  
-              input.checkbox(type='image' src='/public/graphics/visit_go.gif' style='text-align: right' height='25' name='login' border='0' onmouseout="src='/public/graphics/visit_go.gif';" onmouseover="src='/public/graphics/visit_go.gif';")
+              input.checkbox(type='image' src='/graphics/visit_go.gif' style='text-align: right' height='25' name='login' border='0' onmouseout="src='/graphics/visit_go.gif';" onmouseover="src='/graphics/visit_go.gif';")
   tr
     td.sidenav_TD(width='150' valign='TOP' height='100%')
       table(border='0' cellpadding='0' cellspacing='0' width='100%')
@@ -62,30 +62,30 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
           td(align='CENTER' valign='TOP')
             br
             a(href='/signup')
-              input(style='border: None; padding:3px;' type='image' src='/public/graphics/signup.png')
+              input(style='border: None; padding:3px;' type='image' src='/graphics/signup.png')
             br
             a(href='/main_map')
-              input(style='border: None; padding:3px;' type='image' src='/public/graphics/map.png')
+              input(style='border: None; padding:3px;' type='image' src='/graphics/map.png')
             br
             a(href='/games')
-              input(style='border: None; padding:3px;' type='image' src='/public/graphics/games.png')
+              input(style='border: None; padding:3px;' type='image' src='/graphics/games.png')
             br
             br
             a(href='/signup')
-              img(src='/public/graphics/prebuddy.gif' border='1')
+              img(src='/graphics/prebuddy.gif' border='1')
     br
     br
     td(width='650' height='100%' valign='TOP' align='LEFT')
       table.content_TD(border='0' cellpadding='0' cellspacing='5' width='100%')
         tr
-          td(width='11' align='center' background='/public/graphics/vertline.gif')
-            img(src='/public/graphics/vertline.gif')
+          td(width='11' align='center' background='/graphics/vertline.gif')
+            img(src='/graphics/vertline.gif')
           td
             table(width='100%' cellpadding='0' cellspacing='0' border='0')
               // BANNER TR
               tr
                 td(colspan='3' height='100')
-                  img(src='/public/graphics/gazette_banner.gif' title='Millsberry Gazette')
+                  img(src='/graphics/gazette_banner.gif' title='Millsberry Gazette')
               // BLUE BACKGROUND HEADLINE TR
               tr.header_stripe_TD
                 td(width='284' text-align='left')
@@ -100,7 +100,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                   br
                   // BEGIN FEATURED STORY BLOCK
                   a(href='/signup')
-                    img(src='/public/graphics/welcome_signup.gif' border='1' width='275' height='200')
+                    img(src='/graphics/welcome_signup.gif' border='1' width='275' height='200')
                   br
                   div
                     table(cellpadding='0' cellspacing='0' border='0' width='100%')
@@ -137,7 +137,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                     table(cellpadding='0' cellspacing='0' border='0' width='100%')
                       tr
                         td(width='4')
-                        td(width='275' height='215' background='/public/graphics/poll_results_2_v2.gif' valign='top')
+                        td(width='275' height='215' background='/graphics/poll_results_2_v2.gif' valign='top')
                           table(border='0' cellpadding='0' cellspacing='0' width='100%')
                             tr
                               td(width='25' height='35')
@@ -178,7 +178,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                   // END POLL BLOCK
                   hr(size='1' noshade='')
                   a(href='/peabody_park')
-                    img(src='/public/graphics/ad_museum_2_v1.gif' title='' border='0')
+                    img(src='/graphics/ad_museum_2_v1.gif' title='' border='0')
                   hr(size='1' noshade='')
                   // BEGIN TABLE OF CONTENTS
                   div
@@ -188,20 +188,20 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                           | Contents
                       tr
                         td
-                          img(src='/public/graphics/paperbullet.gif' width='8' height='8')
+                          img(src='/graphics/paperbullet.gif' width='8' height='8')
                           font(size='-1')
                             | Yard Sale Classifieds . . . 
                             a(href='/classified')
                               font(size='-1') page 4
                   // END TABLE OF CONTENTS
-                td(width='10 align=' background='/public/graphics/vertline.gif')
-                  img(src='/public/graphics/vertline.gif')
+                td(width='10 align=' background='/graphics/vertline.gif')
+                  img(src='/graphics/vertline.gif')
                 // RIGHT COLUMN
                 td(width='284' valign='top' align='center')
                   br
                   center
                     a(href='/refer' target='_BLANK')
-                      img(src='/public/graphics/ad_choosebreakfast_1.gif' title='www.presidentschallenge.org' width='275' height='225' border='0')
+                      img(src='/graphics/ad_choosebreakfast_1.gif' title='www.presidentschallenge.org' width='275' height='225' border='0')
                     hr(size='1' noshade='')
                     table(border='0' cellpadding='0' cellspacing='0' height='32' width='275')
                       tr
@@ -210,7 +210,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                           a(href='/studio' style='font:13px;') Studio!
                       tr
                         td(width='100%' align='CENTER' colspan='2')
-                          img(src='/public/graphics/top10_gazette.gif' height='152' width='275')
+                          img(src='/graphics/top10_gazette.gif' height='152' width='275')
                       tr
                         td
                           table(border='0' cellpadding='2' cellspacing='0' height='100%' width='100%')
@@ -259,7 +259,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                             table(width='100%' cellpadding='0' cellspacing='0' border='0')
                               tr
                                 td
-                                  img#weather-icon(src='/public/graphics/weather_icons/sunny.gif' width='80' height='85' align='left')
+                                  img#weather-icon(src='/graphics/weather_icons/sunny.gif' width='80' height='85' align='left')
                                 td(width='100%')
                                   table(width='100%' border='0' cellpadding='0' cellspacing='0')
                                     tr(bgcolor='#EEEEEE')
@@ -291,7 +291,7 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                     // END WEATHER BLOCK
                     hr(size='1' noshade='')
                     a(href='/theater')
-                      img(src='/public/graphics/MdgscrWebAdV11.jpg' title='Madagascar' border='0')
+                      img(src='/graphics/MdgscrWebAdV11.jpg' title='Madagascar' border='0')
                     hr(size='1' noshade='')
                     // BEGIN HOME TOUR BLOCK
                     div
@@ -393,8 +393,8 @@ table(border='0' height='100%' width='100%' align='LEFT' cellspacing='0' cellpad
                               | !
                     // END FEATURED BUDDY BLOCK
                     hr(size='1' noshade='')
-          td(width='11' align='center' background='/public/graphics/vertline.gif')
-            img(src='/public/graphics/vertline.gif')
+          td(width='11' align='center' background='/graphics/vertline.gif')
+            img(src='/graphics/vertline.gif')
       table(border='0' width='100%' cellpadding='0' cellspacing='0')
         tr
           td.footerfont(colspan='3' align='CENTER')
