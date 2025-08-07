@@ -35,8 +35,8 @@
   display: grid !important;
 }
 
-.grid-cols-\[150px_650px_275px\] {
-  grid-template-columns: 150px 650px 275px !important;
+.grid-cols-\[275px_650px_275px\] {
+  grid-template-columns: 275px 650px 275px !important;
 }
 
 /* Ensure grid items don't float or use flexbox */
@@ -46,7 +46,6 @@
   display: block !important;
 }
 
-
 /* Custom component styles using Tailwind @apply */
 @layer components {
   .millsberry-container {
@@ -54,7 +53,7 @@
   }
 
   .millsberry-header {
-    @apply flex bg-[#cbf2fe] p-2.5 border-b-2 border-[#1887b6];
+    @apply flex bg-[#cbf2fe] p-3 border-b-2 border-[#1887b6];
   }
 
   .logo-section {
@@ -66,7 +65,7 @@
   }
 
   .nav-buttons {
-    @apply flex gap-2.5 mb-2.5;
+    @apply flex gap-2 mb-3;
   }
 
   .login-section {
@@ -74,11 +73,11 @@
   }
 
   .login-section form {
-    @apply flex items-center gap-2.5;
+    @apply flex items-center gap-2;
   }
 
   .login-section input {
-    @apply px-1.5 py-1 border border-gray-300 rounded;
+    @apply px-2 py-1 border border-gray-300 rounded;
   }
 
   .login-button {
@@ -86,15 +85,15 @@
   }
 
   .search-section {
-    @apply bg-[#1887b6] px-2.5 py-1;
+    @apply bg-[#1887b6] px-3 py-1;
   }
 
   .search-bar {
-    @apply flex items-center gap-2.5 text-white;
+    @apply flex items-center gap-2 text-white;
   }
 
   .search-bar input {
-    @apply px-1.5 py-1 border border-gray-300 rounded;
+    @apply px-2 py-1 border border-gray-300 rounded;
   }
 
   .search-button {
@@ -106,7 +105,7 @@
   }
 
   .sidebar {
-    @apply w-[150px] bg-gray-100 p-5 pr-2.5 border-r-2 border-[#1887b6];
+    @apply w-[275px] bg-gray-100 p-5 pr-3 border-r-2 border-[#1887b6];
   }
 
   .sidebar-buttons {
@@ -126,7 +125,7 @@
   }
 
   .news-header {
-    @apply flex justify-between items-center bg-[#1887b6] text-white p-2.5 mb-5;
+    @apply flex justify-between items-center bg-[#1887b6] text-white p-3 mb-5;
   }
 
   .news-title {
@@ -154,7 +153,7 @@
   }
 
   .poll-results h3 {
-    @apply text-center mb-2.5 underline;
+    @apply text-center mb-3 underline;
   }
 
   .poll-results h4 {
@@ -166,7 +165,7 @@
   }
 
   .poll-option {
-    @apply flex justify-between py-1.5 border-b border-gray-200;
+    @apply flex justify-between py-2 border-b border-gray-200;
   }
 
   .poll-link {
@@ -182,7 +181,7 @@
   }
 
   .contents-section h3 {
-    @apply bg-[#1887b6] text-white p-2.5 mb-4;
+    @apply bg-[#1887b6] text-white p-3 mb-4;
   }
 
   .contents-item {
@@ -285,6 +284,6 @@
   }
 
   .nav-button {
-    @apply px-5 py-2.5 bg-[#1887b6] text-white rounded font-bold transition-colors hover:bg-[#156a8a];
+    @apply px-5 py-3 bg-[#1887b6] text-white rounded font-bold transition-colors hover:bg-[#156a8a];
   }
 } 

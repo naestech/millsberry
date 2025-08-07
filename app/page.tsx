@@ -162,7 +162,7 @@ export default function HomePage() {
                   className="max-w-full h-auto"
                 />
               </Link>
-                                   <div className="mt-8 ml-8flex justify-center">
+                                   <div className="mt-8 flex justify-center">
                        <Link href="/signup">
                          <Image src="/graphics/prebuddy.gif" alt="Prebuddy" width={200} height={100} className="max-w-full h-auto" />
                        </Link>
