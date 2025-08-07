@@ -162,9 +162,11 @@ export default function HomePage() {
                   className="max-w-full h-auto"
                 />
               </Link>
-              <Link href="/signup">
-                <Image src="/graphics/prebuddy.gif" alt="Prebuddy" width={120} height={100} className="max-w-full h-auto" />
-              </Link>
+                                   <div className="mt-8 ml-8flex justify-center">
+                       <Link href="/signup">
+                         <Image src="/graphics/prebuddy.gif" alt="Prebuddy" width={200} height={100} className="max-w-full h-auto" />
+                       </Link>
+                     </div>
             </div>
           </div>
 
@@ -180,9 +182,11 @@ export default function HomePage() {
             </div>
 
             <section className="max-w-[600px] mx-auto mb-10 text-sm leading-relaxed">
-              <Link href="/signup">
-                <Image src="/graphics/welcome_signup.gif" alt="Welcome Signup" width={275} height={200} className="max-w-full h-auto" />
-              </Link>
+              <div className="flex justify-center mb-4">
+                <Link href="/signup">
+                  <Image src="/graphics/welcome_signup.gif" alt="Welcome Signup" width={275} height={200} className="max-w-full h-auto" />
+                </Link>
+              </div>
               <p className="mt-4 mb-3">If you look over the hill, you'll see the far edge of a small city called Millsberry. It used to be a small town, but recently, Millsberry has grown beyond its borders. Walk down the hill and you step into the outer neighborhoods. Just a little further, and you walk into the center of Town.</p>
               <p className="mb-3">If you want to become a citizen, just click on the SIGN UP button to the left.</p>
               <p className="mb-3">You'll get your own customizable home, access to the shopping district, and get to play a bunch of great games! It's completely free and only takes a second.</p>
