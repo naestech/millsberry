@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Reset to override legacy styles that interfere with Tailwind */
+* {
+  box-sizing: border-box;
+}
+
+/* Override legacy float-based layouts */
+.flex, .flex-row, .flex-col, .flex-1, .flex-shrink-0 {
+  float: none !important;
+  clear: none !important;
+  display: flex !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+.flex-1 {
+  flex: 1 1 0% !important;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* CSS Grid overrides for the main layout */
+.grid {
+  display: grid !important;
+}
+
+.grid-cols-\[150px_650px_275px\] {
+  grid-template-columns: 150px 650px 275px !important;
+}
+
+/* Ensure grid items don't float or use flexbox */
+.grid > * {
+  float: none !important;
+  clear: none !important;
+  display: block !important;
+}
+
+
+/* Custom component styles using Tailwind @apply */
+@layer components {
+  .millsberry-container {
+    @apply w-full min-h-screen bg-[#cbf2fe];
+  }
+
+  .millsberry-header {
+    @apply flex bg-[#cbf2fe] p-2.5 border-b-2 border-[#1887b6];
+  }
+
+  .logo-section {
+    @apply mr-5;
+  }
+
+  .navigation-section {
+    @apply flex-1 flex flex-col;
+  }
+
+  .nav-buttons {
+    @apply flex gap-2.5 mb-2.5;
+  }
+
+  .login-section {
+    @apply flex items-center;
+  }
+
+  .login-section form {
+    @apply flex items-center gap-2.5;
+  }
+
+  .login-section input {
+    @apply px-1.5 py-1 border border-gray-300 rounded;
+  }
+
+  .login-button {
+    @apply bg-transparent border-none cursor-pointer p-0;
+  }
+
+  .search-section {
+    @apply bg-[#1887b6] px-2.5 py-1;
+  }
+
+  .search-bar {
+    @apply flex items-center gap-2.5 text-white;
+  }
+
+  .search-bar input {
+    @apply px-1.5 py-1 border border-gray-300 rounded;
+  }
+
+  .search-button {
+    @apply bg-transparent border-none cursor-pointer p-0;
+  }
+
+  .millsberry-content {
+    @apply flex min-h-[calc(100vh-150px)];
+  }
+
+  .sidebar {
+    @apply w-[150px] bg-gray-100 p-5 pr-2.5 border-r-2 border-[#1887b6];
+  }
+
+  .sidebar-buttons {
+    @apply flex flex-col gap-4;
+  }
+
+  .main-content {
+    @apply flex-1 p-5 bg-white;
+  }
+
+  .gazette-header {
+    @apply text-center mb-5;
+  }
+
+  .news-section {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .news-header {
+    @apply flex justify-between items-center bg-[#1887b6] text-white p-2.5 mb-5;
+  }
+
+  .news-title {
+    @apply font-bold text-lg;
+  }
+
+  .news-date {
+    @apply text-sm;
+  }
+
+  .featured-story {
+    @apply mb-8;
+  }
+
+  .story-content {
+    @apply mt-4 leading-relaxed;
+  }
+
+  .story-content p {
+    @apply mb-4;
+  }
+
+  .poll-section {
+    @apply mb-8 p-5 bg-gray-50 rounded;
+  }
+
+  .poll-results h3 {
+    @apply text-center mb-2.5 underline;
+  }
+
+  .poll-results h4 {
+    @apply text-center mb-5 font-bold;
+  }
+
+  .poll-options {
+    @apply mb-4;
+  }
+
+  .poll-option {
+    @apply flex justify-between py-1.5 border-b border-gray-200;
+  }
+
+  .poll-link {
+    @apply text-center block text-[#1887b6] underline;
+  }
+
+  .ad-section {
+    @apply mb-8 text-center;
+  }
+
+  .contents-section {
+    @apply mb-8;
+  }
+
+  .contents-section h3 {
+    @apply bg-[#1887b6] text-white p-2.5 mb-4;
+  }
+
+  .contents-item {
+    @apply flex items-center gap-2.5 text-sm;
+  }
+
+  /* Page specific styles */
+  .signup-page,
+  .home-page,
+  .games-page,
+  .main-map-page,
+  .users-page {
+    @apply p-5 max-w-7xl mx-auto;
+  }
+
+  .signup-content,
+  .home-content,
+  .games-content,
+  .map-content {
+    @apply bg-white p-8 rounded-lg shadow-lg;
+  }
+
+  .signup-form {
+    @apply max-w-md mx-auto mt-5;
+  }
+
+  .form-group {
+    @apply mb-4;
+  }
+
+  .form-group label {
+    @apply block mb-1.5 font-bold;
+  }
+
+  .form-group input {
+    @apply w-full px-2.5 py-2.5 border border-gray-300 rounded;
+  }
+
+  .signup-button {
+    @apply w-full px-3 py-3 bg-[#1887b6] text-white border-none rounded cursor-pointer text-base font-bold hover:bg-[#156a8a] transition-colors;
+  }
+
+  .home-navigation,
+  .games-grid,
+  .map-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5;
+  }
+
+  .nav-link {
+    @apply flex flex-col items-center p-4 bg-gray-50 rounded-lg text-center transition-transform hover:-translate-y-0.5;
+  }
+
+  .stats-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-5;
+  }
+
+  .stat-item {
+    @apply bg-blue-50 p-4 rounded text-center;
+  }
+
+  .stat-label {
+    @apply font-bold text-gray-600;
+  }
+
+  .stat-value {
+    @apply text-lg font-bold text-[#1887b6];
+  }
+
+  .action-buttons {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-5;
+  }
+
+  .action-button {
+    @apply px-5 py-3 bg-[#1887b6] text-white text-center rounded font-bold transition-colors hover:bg-[#156a8a];
+  }
+
+  .game-card,
+  .location-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1;
+  }
+
+  .game-image,
+  .location-image {
+    @apply w-full h-auto;
+  }
+
+  .game-card h3,
+  .location-card h3 {
+    @apply p-4 pb-1 m-0 text-[#1887b6];
+  }
+
+  .game-card p,
+  .location-card p {
+    @apply px-4 pb-4 m-0 text-gray-600 leading-relaxed;
+  }
+
+  .games-navigation,
+  .map-navigation {
+    @apply flex gap-4 mt-8 justify-center;
+  }
+
+  .nav-button {
+    @apply px-5 py-2.5 bg-[#1887b6] text-white rounded font-bold transition-colors hover:bg-[#156a8a];
+  }
+} 

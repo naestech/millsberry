@@ -1,22 +1,32 @@
 {
-  "name": "chillsberry",
+  "name": "millsberry",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "description": "Chillsberry",
+  "description": "Millsberry - A virtual town experience",
   "author": {
     "name": ""
   },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.0",
-    "debug": "^2.2.0",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0",
+    "next": "^15.4.6",
     "openweather-apis": "^4.4.1",
-    "pug": "^2.0.0-beta6",
-    "serve-favicon": "^2.3.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.4.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.0.0"
   }
 }

@@ -1,3 +1,0 @@
-C:\Users\lasag\source\repos\Chillsberry\Chillsberry\obj\Debug\Chillsberry.njsproj.CoreCompileInputs.cache
-C:\Users\lasag\source\repos\Chillsberry\Chillsberry\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Users\lasag\source\repos\Chillsberry\Chillsberry\obj\Debug\Chillsberry.njsprojAssemblyReference.cache
