@@ -2,7 +2,6 @@
 <img src="readme-assets/millsberry.png" alt="logo">
 <b>millsberry.com, rewriten!</b>
 </div>
-</br>
 
 ---
 
